@@ -1,0 +1,7 @@
+document.json
+question.txt
+questions.json
+.env
+venv/
+.vscode/
+*pycache*

@@ -1,0 +1,13 @@
+fastapi
+langchain
+PyPDF2
+uvicorn
+python-multipart
+langchain-community
+gpt4all
+langchain-chroma
+langchainhub
+langchain-openai
+black
+flake8
+langchain_ollama
