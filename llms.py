@@ -15,7 +15,7 @@ class ChatOllama(BaseLLM):
     def llm():
         model_name = os.environ["MODEL_NAME"]
         return ChOll(
-            model="llama3.2",
+            model=model_name,
         )
 
 

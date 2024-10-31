@@ -1,7 +1,6 @@
 import os
 import uvicorn
-from fastapi import FastAPI, File, UploadFile, HTTPException
-from fastapi.responses import JSONResponse
+from fastapi import FastAPI
 
 from dotenv import load_dotenv
 
@@ -14,4 +13,4 @@ app = FastAPI()
 app.include_router(q_n_a_router, prefix="")
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=int(os.environ["PORT"]), reload=True)

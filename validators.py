@@ -33,7 +33,6 @@ class PDFFileParser(BaseParser):
         return self.file.content_type == FileTypes.PDF
 
     def extract_data(self):
-        # TODO: Add try catch block
         pdf_reader = PyPDF2.PdfReader(BytesIO(self.file.file.read()))
         content = "\n".join([page.extract_text() for page in pdf_reader.pages])
         return content
